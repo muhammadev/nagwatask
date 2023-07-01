@@ -7,7 +7,6 @@ export const AnsweredQuestionsLengthProvider = ({ children }) => {
 
   // update method
   const updateAnsweredQuestionsLength = (newValue) => {
-    console.log(newValue, "here");
     setAnsweredQuestionsLength(newValue);
   };
 

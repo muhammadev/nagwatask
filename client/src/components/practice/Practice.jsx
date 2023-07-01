@@ -51,12 +51,14 @@ export default function Practice(props) {
       setCorrectAnswers((prevValue) => (isCorrect ? prevValue + 1 : prevValue));
 
       // to update the progress bar
-      console.log(answeredQuestionsLength, "there");
       updateAnsweredQuestionsLength(answeredQuestionsLength + 1);
 
       // if it's the last word, go to final score page
       if (wordIndex === 9) {
-        updateIsQuizOver(true);
+        // use settimeout to fix the asynchronization problem
+        setTimeout(() => {
+          updateIsQuizOver(true);
+        }, 0);
       }
     }
   };
