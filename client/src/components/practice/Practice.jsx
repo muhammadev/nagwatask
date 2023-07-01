@@ -32,7 +32,7 @@ export default function Practice(props) {
     if (totalQuestionsLength) {
       updateScore((correctAnswers / totalQuestionsLength) * 100);
     }
-    
+
     // eslint-disable-line react-hooks/exhaustive-deps
   }, [correctAnswers, totalQuestionsLength]);
 
@@ -56,9 +56,7 @@ export default function Practice(props) {
 
       // if it's the last word, go to final score page
       if (wordIndex === 9) {
-        setTimeout(() => {
-          updateIsQuizOver(true);
-        }, 1.5);
+        updateIsQuizOver(true);
       }
     }
   };
