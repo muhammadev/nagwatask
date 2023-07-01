@@ -10,9 +10,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Define routes
-// delete this
 app.get("/", (req, res) => {
-  res.send(["Hello, Express.js!", testData.wordList[0]]);
+  res.send("Hello, Express.js!");
 });
 
 // words GET endpoint
@@ -24,6 +23,8 @@ const rankRouter = require("./routes/rank");
 app.use("/rank", rankRouter);
 
 // Start the server
-app.listen(port, () => {
+const server = app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
+
+module.exports = { app, server };

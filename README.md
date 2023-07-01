@@ -29,6 +29,9 @@
 
 The app will be accessible at `http://localhost:3000`.
 
+## How to test
+while standing on the server directory, run: `npm test`
+
 ## How to Use the App
 
 1. Answer the questions presented to you.

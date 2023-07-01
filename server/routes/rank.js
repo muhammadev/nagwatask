@@ -17,7 +17,7 @@ router.post("/", (req, res) => {
     100
   ).toFixed(2);
 
-  res.status(200).send(JSON.stringify({ rank }));
+  res.status(200).send({ rank: Number(rank) });
 });
 
 module.exports = router;
