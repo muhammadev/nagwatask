@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  width: 75%;
+
+  span {
+    margin-inline-end: 5px;
+  }
+
+  .progress-bar-container {
+    flex-grow: 1;
+    border: 1px solid #e1b12c;
+    height: 25px;
+    background: #e1b12c;
+    border-radius: 25px;
+    position: relative;
+    margin-bottom: 50px;
+    overflow: hidden;
+
+    .progress-bar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      background: #34495E;
+      border-radius: 25px;
+      transition: 0.5s;
+    }
+  }
+}

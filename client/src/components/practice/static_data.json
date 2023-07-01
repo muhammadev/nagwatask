@@ -1,0 +1,23 @@
+{
+  "question_choices": ["verb", "adverb", "adjective", "noun"],
+  "feedback": {
+    "success": [
+      "Correct!",
+      "You Rock!",
+      "Right!",
+      "You're On Fire!",
+      "Yes!",
+      "Good",
+      "Noice!",
+      "You got it!"
+    ],
+    "failure": [
+      "Wrong!",
+      "Give It Another Shot!",
+      "May Be Next Time",
+      "No! But Don't Give Up!",
+      "False",
+      "Nope!"
+    ]
+  }
+}
